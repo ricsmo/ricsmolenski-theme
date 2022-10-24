@@ -14,7 +14,7 @@ into the {body} tag of the default.hbs template --}}
             </header>
             {{#get 'tags' limit='all' include='count.posts'}}
                 <div class="tags">
-                    {{#foreach tags}}
+                    {{#foreach tags filter="slug:[all-in-one-tools, calendar-scheduling, community-platforms, course-marketplaces, domain-name-registration, email-marketing-tools, graphic-design, landing-page-builders, learning-management-systems, live-streaming, screen-recording-video-editing, stock-photos, webinars, website-builders, wordpress-hosting]"}}
                         <a href="{{ url }}">
                 <span class="tag-feature-image" style="background-image: url('{{ feature_image }}');">
                     <span class="tag-title">{{ name }} <small>({{ count.posts }})</small></span>
