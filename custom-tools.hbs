@@ -12,7 +12,7 @@ into the {body} tag of the default.hbs template --}}
             <header class="post-full-header">
                 <h1 class="post-full-title">{{title}}</h1>
             </header>
-            {{#get 'tags' limit='all' include='count.posts' filter='tag:[all-in-one-tools, calendar-scheduling, community-platforms, course-marketplaces, domain-name-registration, email-marketing-tools, graphic-design, landing-page-builders, learning-management-systems, live-streaming, screen-recording-video-editing, stock-photos, webinars, website-builders, wordpress-hosting]'}}
+            {{#get 'tags' limit='all' include='count.posts'}}
                 <div class="tags">
                     {{#foreach tags}}
                         <a href="{{ url }}">
