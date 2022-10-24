@@ -10,7 +10,7 @@ into the {body} tag of the default.hbs template --}}
     <main id="site-main" class="site-main">
         <article class="article {{post_class}}">
             <div class="inner posts">
-                <header class="article-header gh-canvas">
+                <header class="article-header">
 
                     <h1 class="article-title">{{title}}</h1>
 
@@ -34,19 +34,16 @@ into the {body} tag of the default.hbs template --}}
                     {{/if}}
 
                 </header>
-                <section class="gh-content gh-canvas">
+                <div class="post-feed">
+                    {{#get "posts" filter="tags:[course-tools]"}}
 
-                    <div class="post-feed">
-                        {{#get "posts" filter="tags:[course-tools]"}}
+                        {{#foreach posts }}
+                        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                            {{> "post-card"}}
+                        {{/foreach}}
+                    {{/get}}
 
-                            {{#foreach posts }}
-                            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                                {{> "post-card"}}
-                            {{/foreach}}
-                        {{/get}}
-
-                    </div>
-                </section>
+                </div>
             </div>
         </article>
     </main>
