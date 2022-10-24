@@ -6,23 +6,18 @@ into the {body} tag of the default.hbs template --}}
 
 {{#post}}
 {{!-- Everything inside the #post block pulls data from the page --}}
+    {{#get "posts" filter="tags:[course-tools]"}}
 
-    <main id="site-main" class="site-main outer" role="main">
-        <div class="inner">
-            <header class="post-full-header">
-                <h1 class="post-full-title">{{title}}</h1>
-            </header>
-            {{#get 'tags' limit='all' include='count.posts'}}
-                <div class="tags">
-                    {{#foreach tags filter="slug:[all-in-one-tools, calendar-scheduling, community-platforms, course-marketplaces, domain-name-registration, email-marketing-tools, graphic-design, landing-page-builders, learning-management-systems, live-streaming, screen-recording-video-editing, stock-photos, webinars, website-builders, wordpress-hosting]"}}
-                        <a href="{{ url }}">
-                <span class="tag-feature-image" style="background-image: url('{{ feature_image }}');">
-                    <span class="tag-title">{{ name }} <small>({{ count.posts }})</small></span>
-                <span>
-                        </a>
-                    {{/foreach}}
-                </div>
-            {{/get}}
+        <main id="site-main" class="site-main outer">
+        <div class="inner posts">
+
+            <div class="post-feed">
+                {{#foreach posts }}
+                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            </div>
+
         </div>
     </main>
 
