@@ -6,16 +6,19 @@ into the {body} tag of the default.hbs template --}}
 
 {{#post}}
 {{!-- Everything inside the #post block pulls data from the page --}}
-    {{#get "posts" filter="tags:[course-tools]"}}
 
         <main id="site-main" class="site-main outer">
         <div class="inner posts">
 
             <div class="post-feed">
-                {{#foreach posts }}
+        {{#get "posts" filter="tags:[course-tools]"}}
+
+            {{#foreach posts }}
                 {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
                     {{> "post-card"}}
-                {{/foreach}}
+            {{/foreach}}
+        {{/get}}
+
             </div>
 
         </div>
