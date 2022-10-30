@@ -55,8 +55,6 @@ into the {body} tag of the default.hbs template --}}
                 </div>
             </div>
         </section>
-            {{> share-block}}
-
         </div>
 
         {{#match @custom.post_image_style "!=" "Hidden"}}
@@ -84,6 +82,7 @@ into the {body} tag of the default.hbs template --}}
 
     <section class="gh-content gh-canvas">
         <aside class="gh-sidebar"><p><strong>On this page...</strong></p><div class="gh-toc"></div></aside> {{! The TOC will be inserted here }}
+        {{> share-block}}
         {{content}}
         {{!-- A signup call to action is displayed here, viewed as a logged-in member --}}
 {{#if @site.members_enabled}}
