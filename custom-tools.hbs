@@ -34,6 +34,8 @@ into the {body} tag of the default.hbs template --}}
                     {{/if}}
 
                 </header>
+                <section class="gh-content gh-canvas">
+
                 <div class="post-feed">
                     {{#get "posts" filter="tags:[course-tools]" order="title ASC"}}
 
@@ -44,6 +46,7 @@ into the {body} tag of the default.hbs template --}}
                     {{/get}}
 
                 </div>
+                </section>
             </div>
         </article>
     </main>
