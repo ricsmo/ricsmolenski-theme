@@ -36,14 +36,10 @@ into the {body} tag of the default.hbs template --}}
                 <div class="inner posts">
 
                 <div class="post-feed">
-                    {{#get "posts" filter="tags:[course-tools]" order="title ASC"}}
-
                         {{#foreach posts }}
                         {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
                             {{> "tools-card"}}
                         {{/foreach}}
-                    {{/get}}
-
                 </div>
                 </div>
         </article>
