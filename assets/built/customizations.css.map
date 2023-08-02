@@ -1,1 +1,0 @@
-{"version":3,"sources":["customizations.css"],"names":[],"mappings":"AAAA,8BAEI,kBAAsB,CADtB,aAEJ","file":"customizations.css","sourcesContent":[".gh-head, .site-header-content {\n    color: darkslategray;\n    background: whitesmoke;\n}"]}
