@@ -60,6 +60,9 @@
 }
 
 .readmore a {
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 20px;
     color: var(--ghost-accent-color); /* Color links with the Ghost accent color defined in Admin */
 }
 
