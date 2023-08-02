@@ -6,10 +6,12 @@
             <div class="p-hero-left">
                 <div>
                     <h1>Welcome, Online Entrepreneurs 👋</h1>
-                    <p>This is <strong><a href="https://ricsmo.com">ricsmo.com</a></strong>, and, as you may have guessed, I'm Ric Smolenski (ricsmo for short).</p>
+                    <p>This is <strong><a href="https://ricsmo.com">ricsmo.com</a></strong>, and, as you may have
+                        guessed, I'm Ric Smolenski (ricsmo for short).</p>
                     <p>I run online business <em>live</em> to help others do the same.</p>
                     <p>I've been earning income online for more than 25 years.</p>
-                    <p>Join me in learning about online marketing, selling online courses, or whatever else I'm working on at the moment.</p>
+                    <p>Join me in learning about online marketing, selling online courses, or whatever else I'm working
+                        on at the moment.</p>
                 </div>
                 <div class="p-hero-buttons">
                     {{! Launches the Ghost membership portal }}
@@ -20,7 +22,7 @@
             </div>
             <div class="p-hero-right">
                 {{! Loads the your cover image as defined in Ghost admin }}
-                <img src="{{img_url @site.cover_image size="l"}}" alt="ricsmo" />
+                <img src="{{img_url @site.cover_image size="l"}}" alt="ricsmo"/>
             </div>
         </div>
     </section>
@@ -36,13 +38,15 @@
                     {{#foreach posts}}
                         <article class="p-post-card">
                             {{! Use the img_url helper to bring in the post's feature image. }}
-                            <img src="{{img_url feature_image size="m"}}" alt="{{feature_image_alt}}" />
+                            <img src="{{img_url feature_image size="m"}}" alt="{{feature_image_alt}}"/>
                             <h3><a href="{{url}}">{{title}}</a></h3>
                         </article>
                     {{/foreach}}
                 {{/get}}
             </div>
-            <a class="readmore" href="https://ricsmo.com/blog/">More...</a>
+            <div class="readmore">
+                <a href="https://ricsmo.com/blog/">More...</a>
+            </div>
         </div>
     </section>
 
@@ -57,13 +61,15 @@
                     {{#foreach posts}}
                         <article class="p-post-card">
                             {{! Use the img_url helper to bring in the post's feature image. }}
-                            <img src="{{img_url feature_image size="m"}}" alt="{{feature_image_alt}}" />
+                            <img src="{{img_url feature_image size="m"}}" alt="{{feature_image_alt}}"/>
                             <h3><a href="{{url}}">{{title}}</a></h3>
                         </article>
                     {{/foreach}}
                 {{/get}}
             </div>
-            <a class="readmore" href="https://ricsmo.com/reviews/">More...</a>
+            <div class="readmore">
+                <a href="https://ricsmo.com/reviews/">More...</a>
+            </div>
         </div>
     </section>
 </main>
