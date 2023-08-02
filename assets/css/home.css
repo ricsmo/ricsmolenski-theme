@@ -59,6 +59,10 @@
     color: var(--ghost-accent-color); /* Color links with the Ghost accent color defined in Admin */
 }
 
+.p-inner h2 a {
+    color: var(--ghost-accent-color); /* Color links with the Ghost accent color defined in Admin */
+}
+
 .p-hero-buttons {
     display: flex;
     gap: 1.6rem;
