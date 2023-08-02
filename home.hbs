@@ -28,7 +28,7 @@
     {{! First section}}
     <section class="p-outer">
         <div class="p-inner">
-            <h2>Blog</h2>
+            <h2><a href="https://ricsmo.com/blog/">Blog</a></h2>
             <div class="p-posts-grid">
                 {{! Use the get helper to fetch posts }}
                 {{#get "posts" filter="primary_tag:blog" limit="6" }}
@@ -42,14 +42,13 @@
                     {{/foreach}}
                 {{/get}}
             </div>
-            <p><a  class="more" href="https://ricsmo.com/blog/">More blog posts.</a></p>
         </div>
     </section>
 
     {{! Second section }}
     <section class="p-outer">
         <div class="p-inner">
-            <h2>Reviews</h2>
+            <h2><a href="https://ricsmo.com/reviews/">Reviews</a></h2>
             <div class="p-posts-grid">
                 {{! Use the get helper to fetch posts }}
                 {{#get "posts" filter="primary_tag:review" limit="6" }}
@@ -63,7 +62,6 @@
                     {{/foreach}}
                 {{/get}}
             </div>
-            <p><a class="more" href="https://ricsmo.com/reviews/">More review posts.</a></p>
         </div>
     </section>
 </main>

@@ -142,7 +142,3 @@
         object-position: right; /* Position image to far right */
     }
 }
-
-.more a {
-    color: var(--ghost-accent-color);
-}
