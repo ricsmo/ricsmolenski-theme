@@ -2529,7 +2529,7 @@ the right place. Onward!
 
  */
 .has-cover:not(.home-template) .gh-head {
-    background-color: var(--color-border);
+    background-color: #fff;
     color: var(--color-darkgrey);
 }
 .has-cover .gh-head-logo {
@@ -2542,7 +2542,7 @@ the right place. Onward!
 
 .has-cover .gh-burger::before,
 .has-cover .gh-burger::after {
-    color: var(--color-darkgrey);
+    background-color: var(--color-darkgrey);
 }
 
 @media (max-width: 767px)
