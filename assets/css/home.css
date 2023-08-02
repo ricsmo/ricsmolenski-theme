@@ -59,7 +59,7 @@
     color: var(--ghost-accent-color); /* Color links with the Ghost accent color defined in Admin */
 }
 
-.p-inner.more a {
+.p-inner.more {
     color: var(--ghost-accent-color); /* Color links with the Ghost accent color defined in Admin */
 }
 
