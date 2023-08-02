@@ -2528,24 +2528,3 @@ file to add some of your own styles. Well, you've come to
 the right place. Onward!
 
  */
-.has-cover:not(.home-template) .gh-head {
-    background-color: #fff;
-    color: var(--color-darkgrey);
-}
-
-.has-cover .gh-head-open {
-    background-color: #fff;
-    color: var(--color-darkgrey);
-}
-.has-cover .gh-head-logo {
-    color: var(--color-darkgrey);
-}
-.has-cover .gh-head-button {
-    background: var(--color-darkgrey);
-    color: #fff;
-}
-
-.has-cover .gh-burger::before,
-.has-cover .gh-burger::after {
-    background-color: var(--color-darkgrey);
-}
