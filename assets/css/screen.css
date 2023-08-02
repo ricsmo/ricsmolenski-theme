@@ -2532,6 +2532,11 @@ the right place. Onward!
     background-color: #fff;
     color: var(--color-darkgrey);
 }
+
+.gh-head-open .gh-head {
+    background-color: #fff;
+    color: var(--color-darkgrey);
+}
 .has-cover .gh-head-logo {
     color: var(--color-darkgrey);
 }
@@ -2542,10 +2547,5 @@ the right place. Onward!
 
 .has-cover .gh-burger::before,
 .has-cover .gh-burger::after {
-    background-color: var(--color-darkgrey);
-}
-
-@media (max-width: 767px)
-.gh-head-open.has-cover #gh-head, .gh-head-open.has-cover #gh-head .gh-head-actions {
     background-color: var(--color-darkgrey);
 }
