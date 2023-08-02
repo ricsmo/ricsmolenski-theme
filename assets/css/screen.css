@@ -2539,3 +2539,12 @@ the right place. Onward!
     background: var(--color-darkgrey);
     color: #fff;
 }
+
+.gh-burger {
+    color: var(--color-darkgrey);
+}
+
+@media (max-width: 767px)
+.gh-head-open.has-cover #gh-head, .gh-head-open.has-cover #gh-head .gh-head-actions {
+    background-color: var(--color-darkgrey);
+}
