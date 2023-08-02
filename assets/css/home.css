@@ -59,7 +59,6 @@
     color: var(--ghost-accent-color); /* Color links with the Ghost accent color defined in Admin */
 }
 .readmore {
-    margin-left: 20px;
     margin-top: 20px;
     font-size: smaller;
 }
