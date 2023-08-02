@@ -2529,7 +2529,7 @@ the right place. Onward!
 
  */
 .has-cover:not(.home-template) .gh-head {
-    background-color: var(--color-midgrey);
+    background-color: var(--color-lightgrey);
     color: var(--color-darkgrey);
 }
 .has-cover .gh-head-logo {
