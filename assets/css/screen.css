@@ -2533,7 +2533,7 @@ the right place. Onward!
     color: var(--color-darkgrey);
 }
 
-.gh-head-open .gh-head {
+.has-cover .gh-head-open {
     background-color: #fff;
     color: var(--color-darkgrey);
 }
