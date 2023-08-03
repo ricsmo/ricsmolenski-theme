@@ -2550,6 +2550,8 @@ the right place. Onward!
 
 .prevnext {
     display: flex;
+    gap: 20px;
+    font-size: smaller;
 }
 .prevnext>*:first-child {
     align-self: flex-start;
