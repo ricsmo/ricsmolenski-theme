@@ -2564,4 +2564,7 @@ the right place. Onward!
         gap: 10px;
         flex-direction: column;
     }
+    .prevnext>*:first-child {
+        align-self: flex-start;
+    }
 }
