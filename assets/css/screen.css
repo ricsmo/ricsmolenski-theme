@@ -2547,3 +2547,13 @@ the right place. Onward!
 .reading-progress::-webkit-progress-value {
     background: var(--ghost-accent-color); /* Progress bar color */
 }
+
+.prevnext {
+    display: flex;
+}
+.prevnext>*:first-child {
+    align-self: flex-start;
+}
+.prevnext>*:first-child {
+    align-self: flex-end;
+}

@@ -84,7 +84,17 @@ into the {body} tag of the default.hbs template --}}
         <aside class="gh-sidebar"><div class="gh-toc-sticky"><p><strong>On this page...</strong></p><div class="gh-toc"></div></div></aside> {{! The TOC will be inserted here }}
         {{content}}
         {{> share-block}}
+        <div class="prevnext">
+        {{#post}}
+            {{#prev_post}}
+                <a href="{{url}}">⬅️ {{title}}</a>
+            {{/prev_post}}
 
+            {{#next_post}}
+                <a href="{{url}}">{{title}} ➡️</a>
+            {{/next_post}}
+        {{/post}}
+        </div>
         {{!-- A signup call to action is displayed here, viewed as a logged-in member --}}
 {{#if @site.members_enabled}}
 {{#unless @member}}
