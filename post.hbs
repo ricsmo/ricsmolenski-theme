@@ -86,11 +86,13 @@ into the {body} tag of the default.hbs template --}}
         {{> share-block}}
         <div class="prevnext">
             {{#prev_post}}
-                <a href="{{url}}">⬅️ {{title}}</a>
+                <h4>Previous Post:</h4>
+                <a href="{{url}}">{{title}}</a>
             {{/prev_post}}
 
             {{#next_post}}
-                <a href="{{url}}">{{title}} ➡️</a>
+                <h4>Next Post:</h4>
+                <a href="{{url}}">{{title}}</a>
             {{/next_post}}
         </div>
         {{!-- A signup call to action is displayed here, viewed as a logged-in member --}}

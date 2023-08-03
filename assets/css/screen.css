@@ -2551,11 +2551,17 @@ the right place. Onward!
 .prevnext {
     display: flex;
     gap: 20px;
-    font-size: smaller;
+    flex-direction: row;
 }
 .prevnext>*:first-child {
     align-self: flex-start;
 }
 .prevnext>*:first-child {
     align-self: flex-end;
+}
+@media (max-width: 767px) {
+    .prevnext {
+        gap: 10px;
+        flex-direction: column;
+    }
 }
